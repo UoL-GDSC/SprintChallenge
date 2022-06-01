@@ -1,0 +1,185 @@
+body {
+  background-color: #fdf9f2;
+  font-size: 1.5em;
+  height: auto;
+}
+
+#logo {
+  height: 15vh;
+}
+
+.canva-image {
+  margin: -8px;
+}
+
+.canva-image > img {
+  width: 100%;
+}
+
+#main {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sevenSegment {
+  width: 40vw;
+  height: 45vh;
+  border-right: 2px solid rgb(236, 211, 145);
+}
+
+#countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter {
+  display: flex !important;
+  align-items: center;
+  height: 8vh;
+}
+
+.numbers {
+  display: flex;
+  align-items: center;
+}
+
+.counter > p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.1em;
+  margin-left: 10px;
+}
+
+#countdown-end {
+  font-size: 24px;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40vw;
+  height: 30vh;
+}
+
+.info-section {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+.info-section > object,
+div {
+  margin: 10px;
+}
+
+#info > .info-section > .datetime > p {
+  font-size: 1em;
+}
+
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  font-size: 0.8em;
+  /* margin: 5%; */
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 90% 10%;
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 85% 15%;
+  }
+}
+
+@media (max-width: 590px) {
+  .info-section {
+    flex-direction: column;
+    height: 15vh;
+    margin: auto;
+  }
+
+  .info-section > object,
+  div {
+    margin: 5px;
+  }
+
+  #time > object {
+    display: none;
+  }
+
+  .container {
+    grid-template-columns: 80% 20%;
+  }
+}
+
+@media (max-width: 376px) {
+  .info-section {
+    flex-direction: column;
+    height: 12vh;
+    margin: auto;
+  }
+
+  .container {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+}
+
+/* https://getcssscan.com/css-buttons-examples */
+#registerBtn {
+  align-items: center;
+  appearance: none;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+#registerBtn:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+#registerBtn:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+#registerBtn:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
