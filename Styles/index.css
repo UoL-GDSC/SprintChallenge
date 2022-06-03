@@ -4,6 +4,16 @@ body {
   height: auto;
 }
 
+h2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#banner {
+  display: flex;
+  justify-content: center;
+}
+
 #logo {
   height: 15vh;
 }
@@ -21,11 +31,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2em;
 }
 
 #sevenSegment {
   width: 40vw;
-  height: 45vh;
+  height: 40vh;
   border-right: 2px solid rgb(236, 211, 145);
 }
 
@@ -44,6 +55,8 @@ body {
 .numbers {
   display: flex;
   align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .counter > p {
@@ -78,6 +91,12 @@ div {
 
 #info > .info-section > .datetime > p {
   font-size: 1em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#time > object {
+  width: 76px;
 }
 
 footer {
@@ -85,7 +104,6 @@ footer {
   left: 0;
   bottom: 0;
   font-size: 0.8em;
-  /* margin: 5%; */
   width: 100%;
 }
 
@@ -135,11 +153,15 @@ footer {
   }
 }
 
+#buttonBtn {
+  position: fixed;
+}
+
 /* https://getcssscan.com/css-buttons-examples */
 #registerBtn {
   align-items: center;
   appearance: none;
-  background-color: #fcfcfd;
+  background-color: #ebadb1;
   border-radius: 4px;
   border-width: 0;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
@@ -149,6 +171,7 @@ footer {
   cursor: pointer;
   display: inline-flex;
   font-family: "JetBrains Mono", monospace;
+  font-weight: bold;
   height: 48px;
   justify-content: center;
   line-height: 1;
