@@ -2,7 +2,7 @@
 function setup() {
     noCanvas();
 //   const zero = new sevenSegment(0, 0);
-  const countdownDate = new Date("2022/08/01 20:00:00");
+  const countdownDate = new Date("2022/10/17 07:00:00");
 
   const timeIt = setInterval((_) => {
     // Run timeIt every second
