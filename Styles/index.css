@@ -1,5 +1,5 @@
 body {
-  background-color: #fdf9f2;
+  background-color: #D9EAF6;
   font-size: 1.5em;
   height: auto;
 }
@@ -37,7 +37,7 @@ h2 {
 #sevenSegment {
   width: 40vw;
   height: 40vh;
-  border-right: 2px solid rgb(236, 211, 145);
+  border-right: 2px solid rgb(73, 185, 219);
 }
 
 #countdown {
